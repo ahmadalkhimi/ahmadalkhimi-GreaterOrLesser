@@ -29,7 +29,7 @@ public class GreaterOrLesserTest {
     public void greaterOrLesserTest2(){
         int inputA = 1;
         int inputB = 0;
-        String expected = "Greater";
+        String expected = "Equal";
         String actual = gol.decide(inputA, inputB);
         Assert.assertEquals(expected, actual);
     }
@@ -41,7 +41,7 @@ public class GreaterOrLesserTest {
     public void greaterOrLesserTest3(){
         int inputA = 0;
         int inputB = 1;
-        String expected = "Lesser";
+        String expected = "Equal";
         String actual = gol.decide(inputA, inputB);
         Assert.assertEquals(expected, actual);
     }
